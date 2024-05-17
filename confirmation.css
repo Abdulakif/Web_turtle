@@ -1,0 +1,65 @@
+.heading{
+    background-color: rgba(22, 165, 22, 0.575);
+    padding: 4%;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    box-sizing: border-box;
+}
+.heading h1{
+    text-align: center;
+    font-size: 40px;
+}
+.head1 a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+.head1,.head3{
+    width: 20%;
+}
+.head2{
+    width: 60%;
+}
+
+/* Reset default margin and padding */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Confirmation section styles */
+.confirmation-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Summary table styles */
+.summary-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    margin-bottom: 1rem;
+}
+
+.summary-table th, .summary-table td {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+}
+
+/* Back to Home button styles */
+#backToHomeButton {
+    display: block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#backToHomeButton:hover {
+    background-color: #555;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="details.css">
+    <title>Details Page</title>
+</head>
+<body>
+    <div class="heading">
+        <div class="head1"><a href="index.html">Home</a></div>
+        <div class="head2">
+            <h1>Buy Tickets</h1>
+        </div>
+        <div class="head3">
+            <p>Show your tickets via mobile device or print at home</p>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="details-section">
+        <h2>Enter your details</h2>
+        <form id="detailsForm">
+            <div class="form-group-left">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
+            <div class="form-group-right">
+                <label for="mobileNumber">Mobile Number</label>
+                <input type="tel" id="mobileNumber" name="mobileNumber" maxlength="12" required>
+            </div>
+            <div class="form-group-left">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group-right">
+                <label for="confirmEmail">Confirm Email</label>
+                <input type="email" id="confirmEmail" name="confirmEmail" required>
+            </div>
+            <div class="form-group-left">
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <button id="continueButton" disabled>Continue with Purchase</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="details.js"></script>
+</body>
+</html>

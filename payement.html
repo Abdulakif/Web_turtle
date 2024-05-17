@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Book Now</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="payement.css">
+
+    </head>
+    <body>
+        
+        <div class="heading">
+            <div class="head1"><a href="index.html">Home</a></div>
+            <div class="head2">
+                <h1>Buy Tickets</h1>
+            </div>
+            <div class="head3">
+                <p>Show your tickets via mobile device or print at home</p>
+            </div>
+        </div>
+
+        <br>
+
+    <div class="payment-section">
+        <h2>Payment Details</h2>
+        <form id="paymentForm">
+            <label for="cardNumber">Card Number:</label>
+            <input type="text" id="cardNumber" name="cardNumber" maxlength="16" required>
+
+            <label for="expiryDate">Expiry Date:</label>
+            <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" maxlength="5" required>
+
+            <label for="cvc">CVC / CVV:</label>
+            <input type="text" id="cvc" name="cvc" maxlength="3" required>
+
+            <label for="nameOnCard">Name on Card:</label>
+            <input type="text" id="nameOnCard" name="nameOnCard" required>
+
+            <button type="submit" id="payButton">Pay Amount</button>
+        </form>
+    </div>
+
+    <script src="payement.js"></script>
+</body>
+</html>

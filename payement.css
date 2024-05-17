@@ -1,0 +1,73 @@
+.heading{
+    background-color: rgba(22, 165, 22, 0.575);
+    padding: 4%;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    box-sizing: border-box;
+}
+.heading h1{
+    text-align: center;
+    font-size: 40px;
+}
+.head1 a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+.head1,.head3{
+    width: 20%;
+}
+.head2{
+    width: 60%;
+}
+
+/* Reset default margin and padding */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Payment section styles */
+.payment-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Form label styles */
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+/* Form input styles */
+input[type="text"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+/* Pay button styles */
+#payButton {
+    display: block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#payButton:hover {
+    background-color: #555;
+}
+
+#payButton:disabled {
+    background-color: #999;
+    cursor: not-allowed;
+}

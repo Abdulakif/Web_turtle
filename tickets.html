@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Book Now</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="tickets.css">
+
+    </head>
+    <body>
+        
+        <div class="heading">
+            <div class="head1"><a href="index.html">Home</a></div>
+            <div class="head2">
+                <h1>Buy Tickets</h1>
+            </div>
+            <div class="head3">
+                <p>Show your tickets via mobile device or print at home</p>
+            </div>
+        </div>
+
+        <br>
+        
+        <div class="calendar-section">
+            <h2>Select your date of visit</h2>
+            <input type="date" id="dateInput">
+        </div>
+    
+        <div class="guest-section">
+            <h2>Guests</h2>
+            <form id="guestForm">
+                <div class="guestdiv">
+                    <div class="label">
+                        <label for="slAdult">SL Adult</label>
+                    </div>
+                    <div class="selection">
+                        <select id="slAdult" data-category="SL Adult">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="guestdiv">
+                    <div class="label">
+                        <label for="slChild">SL Child</label>
+                    </div>
+                    <div class="selection">
+                        <select id="slChild" data-category="SL Child">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="guestdiv">
+                    <div class="label">
+                        <label for="foreignerAdult">Foreigner Adult</label>
+                    </div>
+                    <div class="selection">
+                        <select id="foreignerAdult" data-category="Foreigner Adult">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="guestdiv">
+                    <div class="label">
+                        <label for="foreignerChild">Foreigner Child</label>
+                    </div>
+                    <div class="selection">
+                        <select id="foreignerChild" data-category="Foreigner Child">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="guestdiv">
+                    <div class="label">
+                        <label for="infant">Infant</label>
+                    </div>
+                    <div class="selection">
+                        <select id="infant" data-category="Infant">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+        </div>
+        
+        
+    
+        <div class="duration-section">
+            <h2>Duration</h2>
+            <div class="durationdiv">
+                <div class="label">
+                    <label for="durationSelect">Select Duration:</label>
+                </div>
+                <div class="selection">
+                    <select id="durationSelect">
+                        <option value="07.00 am - 08.00 am">07.00 am - 08.00 am</option>
+                        <option value="08.00 am - 09.00 am">08.00 am - 09.00 am</option>
+                        <option value="09.00 am - 10.00 am">09.00 am - 10.00 am</option>
+                        <option value="10.00 am - 11.00 am (Peak)">10.00 am - 11.00 am (Peak)</option>
+                        <option value="11.00 am - 12.00 pm (Peak)">11.00 am - 12.00 pm (Peak)</option>
+                        <option value="12.00 pm - 01.00 pm (Peak)">12.00 pm - 01.00 pm (Peak)</option>
+                        <option value="01.00 pm - 02.00 pm ">01.00 pm - 02.00 pm</option>
+                        <option value="02.00 pm - 03.00 pm">02.00 pm - 03.00 pm</option>
+                        <option value="03.00 pm - 04.00 pm (Peak)">03.00 pm - 04.00 pm (Peak)</option>
+                        <option value="04.00 pm - 05.00 pm (Peak)">04.00 pm - 05.00 pm (Peak)</option>
+                        <option value="05.00 pm - 06.00 pm (Peak)">05.00 pm - 06.00 pm (Peak)</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+    <div class="pricing-table-section">
+    <h2>Pricing Table</h2>
+    <table id="pricingTable">
+        <tr>
+            <th>Ticket Category</th>
+            <th>Charge per Normal Hour</th>
+            <th>Charge per Peak Hour</th>
+        </tr>
+        <tr>
+            <td>SL Adult</td>
+            <td>Rs.400</td>
+            <td>Rs.600</td>
+        </tr>
+        <tr>
+            <td>SL Child</td>
+            <td>Rs.200</td>
+            <td>Rs.300</td>
+        </tr>
+        <tr>
+            <td>Foreigner Adult</td>
+            <td>Rs.1000</td>
+            <td>Rs.1200</td>
+        </tr>
+        <tr>
+            <td>Foreigner Child</td>
+            <td>Rs.800</td>
+            <td>Rs.1000</td>
+        </tr>
+        <tr>
+            <td>Infant</td>
+            <td>Free</td>
+            <td>Free</td>
+        </tr>
+    </table>
+</div>
+
+        
+
+    
+        <div class="summary-section">
+            <h2>Summary</h2>
+            <table id="summaryTable">
+                <tr>
+                    <th>Ticket Category</th>
+                    <th>Quantity</th>
+                    <th>Price per Ticket</th>
+                    <th>Total Price</th>
+                </tr>
+                <!-- Table rows has to be generated using JavaScript -->
+            </table>
+            <div id="totalPayable">Total Payable: $0</div>
+        </div>
+        
+        
+    
+        <button id="continueButton" disabled>Continue with Purchase</button>
+    
+        <script src="tickets.js"></script>
+        
+
+    </body>

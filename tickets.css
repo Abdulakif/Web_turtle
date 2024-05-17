@@ -1,0 +1,160 @@
+.heading{
+    background-color: rgba(22, 165, 22, 0.575);
+    padding: 4%;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    box-sizing: border-box;
+}
+.heading h1{
+    text-align: center;
+    font-size: 40px;
+}
+.head1 a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+.head1,.head3{
+    width: 20%;
+}
+.head2{
+    width: 60%;
+}
+
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Styles for sections */
+.calendar-section, .guest-section, .duration-section, .pricing-table-section,
+.summary-section {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+/* Styling for form elements */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.calendar-section h2{
+    margin-bottom: 5px;
+}
+input[type="date"],
+select {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Styling for summary table */
+#summaryTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+#summaryTable th, #summaryTable td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+#summaryTable th {
+    background-color: #f2f2f2;
+}
+
+#totalPayable {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Styling for the continue button */
+#continueButton {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#continueButton:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#pricingTable th,#pricingTable td{
+    text-align: center;
+    padding: 5px;
+    border: 1px solid black;    
+}
+
+.guestdiv{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+.label{
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 15%;
+}
+.selection{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.durationdiv{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+@media screen and (max-width: 600px){
+    .heading{
+        flex-wrap: wrap;
+    }
+    .head1,.head2,.head3{
+        width: 100%;
+    }
+    .guestdiv{
+        display: flex;
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+    .label{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 992px){
+    .heading{
+        flex-wrap: wrap;
+    }
+    .guestdiv{
+        width: 100%;
+    }
+    .label{
+        width: 50%;
+    }
+}
+
